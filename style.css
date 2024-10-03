@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset básico para garantir compatibilidade entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagem h1 {
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    padding: 12px 40px; /* Aumentei o padding para dar mais largura */
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Garante espaçamento entre o ícone e o texto */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Faz os botões ocuparem 100% da largura do container pai */
+    max-width: 300px; /* Define uma largura máxima */
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Garante que o conteúdo do botão ocupe toda a largura */
+    gap: 10px; /* Espaço entre o texto e o ícone */
+    font-weight: bold;
+}
+
+button a:hover {
+    color: #0073b1; /* LinkedIn azul padrão */
+}
+
+button i {
+    font-size: 1.5em;
+    margin-left: 10px; /* Garante que o ícone tenha um espaço fixo da borda */
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.9em;
+    color: #ddd;
+}
